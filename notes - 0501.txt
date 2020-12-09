@@ -1,0 +1,13 @@
+
+
+Vào thư mục đã bung CODE (từ CMD, hoặc PowerShell), gõ lần lượt các Lệnh Sau:
+	1.  npm init -y
+	
+	2.  npm i  express ejs --save
+	
+	
+Sau đó RUN - Server:
+	3.  node  index.js
+	
+	
+	
