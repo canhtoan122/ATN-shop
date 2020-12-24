@@ -21,12 +21,6 @@ router.use(function timeLog (req, res, next) {
 })
 
 /// ..................................................
-router.get('/', productPage);
-function productPage(req, res) {
-    res.render('product');
-}
-
-/// ..................................................
 router.get('/list', listProductPage);
 function listProductPage(req, res) {
   mongoose.connect( dbconfig.urldb, {useNewUrlParser: true, useUnifiedTopology: true} ,
@@ -50,7 +44,7 @@ function listProductPage(req, res) {
 }
 
 /// ..................................................
-router.get('/view', productViewPage);
+router.get('/', productViewPage);
 function productViewPage(req, res) {
 
     MongoClient.connect( dbconfig.urldb, { useUnifiedTopology: true }, function(err, db) {
